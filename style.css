@@ -208,7 +208,7 @@ body {
   z-index: 3;
 }
 .slideshow .arrows .prev {
-  left: 30px;
+  left: 0px;
 }
 .slideshow .arrows .prev:hover .svg {
   left: -10px;
@@ -216,7 +216,7 @@ body {
   opacity: 1;
 }
 .slideshow .arrows .next {
-  right: 30px;
+  right: 0px;
 }
 .slideshow .arrows .next:hover .svg {
   left: 10px;
@@ -230,5 +230,5 @@ body {
   height: 26px;
   fill: rgb(185, 185, 185);
   transition: left 0.05s ease;
-  opacity: 0.35;
+  opacity: 0.10;
 }
