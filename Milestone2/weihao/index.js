@@ -40,6 +40,19 @@ function GenerateChart() {
                     backgroundColor: "#637d8a",
                     borderColor: "#637d8a",
                     fill: false,
+                    datalabels: {
+                        display: false,
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#637d8a",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "top",
+                    },
                 },
                 {
                     label: "Age (20 - 29)",
@@ -47,6 +60,19 @@ function GenerateChart() {
                     backgroundColor: "#A27E5D",
                     borderColor: "#A27E5D",
                     fill: false,
+                    datalabels: {
+                        display: false,
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#A27E5D",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "top",
+                    },
                 },
                 {
                     label: "Age 30 - 39",
@@ -54,6 +80,19 @@ function GenerateChart() {
                     backgroundColor: "#a05195",
                     borderColor: "#a05195",
                     fill: false,
+                    datalabels: {
+                        display: false,
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#a05195",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "top",
+                    },
                 },
                 {
                     label: "Age 40 - 49",
@@ -61,6 +100,19 @@ function GenerateChart() {
                     backgroundColor: "#ECCF1C",
                     borderColor: "#ECCF1C",
                     fill: false,
+                    datalabels: {
+                        display: false,
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#ECCF1C",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "top",
+                    },
                 },
                 {
                     label: "Age 50 - 59",
@@ -68,6 +120,21 @@ function GenerateChart() {
                     backgroundColor: "#8576a4",
                     borderColor: "#8576a4",
                     fill: false,
+                    datalabels: {
+                        display: function(context) {
+                            return context.dataIndex >= 22;
+                        },
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#8576a4",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "center",
+                    },
                 },
                 {
                     label: "Age 60 - 69",
@@ -75,6 +142,21 @@ function GenerateChart() {
                     backgroundColor: "#e3e847",
                     borderColor: "#e3e847",
                     fill: false,
+                    datalabels: {
+                        display: function(context) {
+                            return context.dataIndex >= 21;
+                        },
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#c0c447",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "center",
+                    },
                 },
                 {
                     label: "Age 70 - 79",
@@ -82,6 +164,21 @@ function GenerateChart() {
                     backgroundColor: "#c16329",
                     borderColor: "#c16329",
                     fill: false,
+                    datalabels: {
+                        display: function(context) {
+                            return context.dataIndex >= 21;
+                        },
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#c16329",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "center",
+                    },
                 },
                 {
                     label: "Age 80+",
@@ -89,6 +186,21 @@ function GenerateChart() {
                     backgroundColor: "#ff0b00",
                     borderColor: "#ff0b00",
                     fill: false,
+                    datalabels: {
+                        display: function(context) {
+                            return context.dataIndex >= 20;
+                        },
+                        color: "white",
+                        borderWidth: 7,
+                        borderRadius: 2,
+                        backgroundColor: "#ff0b00",
+                        font: {
+                            weight: "bold",
+                        },
+                        offset: 0,
+                        anchor: "end",
+                        align: "center",
+                    },
                 },
             ],
         };
@@ -133,6 +245,7 @@ function GenerateChart() {
         multiLineChart = new Chart(ctx, {
             type: "line",
             data: chartData,
+            plugins: [ChartDataLabels],
             options: {
                 animation,
                 interaction: {
@@ -157,6 +270,7 @@ function GenerateChart() {
                             size: 20,
                         },
                     },
+                    datalabels: {},
                 },
             },
         });
