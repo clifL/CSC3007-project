@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
-        integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Title</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Covid-19 Charts</title>
 </head>
 <header>
 </header>
 
 <body>
-    <div>
-        <canvas id="myChart"></canvas>
+    <div class="rootContainer">
+        <canvas id="deathRateChart"></canvas>
+        <div class="subContainer">
+            <button type="btnReplay" onclick="Replay();">Replay</button>
+            <button type="btnPause" onclick="Pause();">Pause</button>
+            <button type="btnResume" onclick="Resume();">Resume</button>
+        </div>
     </div>
 </body>
 <script src="lib\jquery.min.js"></script>

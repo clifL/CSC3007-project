@@ -1,0 +1,8 @@
+.rootContainer {
+    position: relative;
+    height: 95vh;
+}
+
+.subContainer {
+    padding-left: 40px;
+}
