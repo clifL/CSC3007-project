@@ -109,7 +109,7 @@ const data = {
   labels: labels,
   datasets: [{
     label: "Cases",
-    data: [y_data_1, y_data_2, y_data_3, y_data_4, y_data_5, y_data_6, y_data_7],
+    data: [15612,34062,27096,21778,20069,19708,15345],
     backgroundColor: [
       'rgba(255, 99, 132, 0.2)',
       'rgba(255, 159, 64, 0.2)',

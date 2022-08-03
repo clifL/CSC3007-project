@@ -25,9 +25,8 @@
 
 <body>
     <div class="section" id="section5">
-        <h1>Covid-19: The Singapore Story</h1>
-        <h3>Its been more than 2 years since the first locally transmitted case was reported in Singapore.</h3>
-        <h3>Let's take a look at how the situation has evolved.</h3>
+        <h1 class = "center"><strong>The Singapore Story</strong></h1>
+        <h3 class = "top">Its been more than 2 years since the first locally transmitted case was reported in Singapore. Let's take a look at how the situation has evolved.</h3>
     </div>
     <div class="section" id="section5">
         <h1><strong>Cases in Singapore</strong></h1>
@@ -37,7 +36,7 @@
     <div class="section" id="section5">
         <div class="rootContainer">
             <div id="whiteOverlay"></div>
-            <canvas id="myChart"></canvas>
+            <canvas id="cases-line-chart"></canvas>
         </div>
     </div>
     <div class="section" id="section5">
@@ -72,14 +71,19 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
-
                     <h3>ICU Rate by Vaccination Status</h3>
-                    <canvas id="icu"></canvas>
+                    <div class="rootContainerTwo">
+                    
+                        <canvas id="icu"></canvas>
+                    </div> 
 
                 </div>
                 <div class="col-sm-6">
                     <h3>Death Rate by Vaccination Status</h3>
-                    <canvas id="death" width="100" height="100"></canvas>
+                    <div class="rootContainerTwo">
+                    
+                        <canvas id="death"></canvas>
+                    </div> 
                 </div>
 
             </div>
@@ -152,15 +156,12 @@
         <div class="paddingTop paddingLeft paddingRight">
             <ul class="paddingLeft" style="list-style-type:square">
                 <h3><strong>
-                        <li>As of Jun 2022, the death rate is in <span style='color: rgb(55, 0, 255);'>sequential
-                                order</span>, where the <span style='color: purple;'>oldest age group has the highest
-                                death toll</span> and vice versa.</li>
+                        <li>Those in age group above 80 years old are more susceptible to Covid-19.</li>
 
-                        <li class="paddingTopMore">In early 2022, recorded the <span style='color: rgb(238, 5, 106);'>first
-                                death</span> for the age group of 20 to 29 years old.
+                        <li class="paddingTopMore">Despite accounting for majority of the new Covid-19 cases, the death count for those 30 does not corelate with the number of cases.
                         </li>
                         <li class="paddingTopMore">
-                            COVID-19 is life-threatening, and no one can avoid it, <span style='color: rgb(238, 5, 106);'>regardless of their age group</span>.
+                            Vaccination with Booster remains a key factor in preventing serious complication or susceptibility to Covid-19. </span>.
                         </li>
                     </strong>
                 </h3>
@@ -175,6 +176,7 @@
 <script src="cases-day.js"></script>
 <script src="icu.js"></script>
 <script src="death.js"></script>
+<script src="cases-line-chart.js"></script>
 
 
 </html>
