@@ -1,0 +1,12 @@
+
+
+.rootContainer {
+    position: absolute;
+    height: 82vh;
+    width: 98vw;
+}
+
+.subContainer {
+    padding-left: 40px;
+}
+
