@@ -1,10 +1,9 @@
 // Dataset
-const DATA_COUNT = 7;
+const DATA_COUNT = 8;
 const NUMBER_CFG = { count: DATA_COUNT, min: -100, max: 100 };
 
 Promise.all([d3.csv("covid-19-case-numbers/number-of-local-cases-by-age.csv")]).then(data1 => {
 
-  console.log("hi")
   console.log(data1[0]);
   let g_0 = []
   let g_1 = []
@@ -22,7 +21,7 @@ Promise.all([d3.csv("covid-19-case-numbers/number-of-local-cases-by-age.csv")]).
   data1[0].forEach(e => {
       // e.source = e.infector;
       // e.target = e.infectee;
-      console.log(e.age_group)
+      // console.log(e.age_group)
       if (e.age_group == '0 - 11 years old'){
         y_data_1.push(e.count_of_case);
       }
@@ -41,7 +40,10 @@ Promise.all([d3.csv("covid-19-case-numbers/number-of-local-cases-by-age.csv")]).
       if (e.age_group == '70 years old and above'){
         y_data_6.push(e.count_of_case);
       }
-      console.log(y_data_1)
+      if (e.age_group == 'total'){
+        y_data_7.push(e.count_of_case);
+      }
+      // console.log(y_data_1)
   });
 
   
@@ -94,6 +96,12 @@ const data = {
       label: "Age 70 and above",
       data:  y_data_6,
       borderColor: "#7d6277",
+      //   backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
+    },
+    {
+      label: "Total",
+      data:  y_data_7,
+      borderColor: "#eeee00",
       //   backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
     },
   ],
