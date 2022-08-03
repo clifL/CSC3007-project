@@ -54,7 +54,7 @@ a {
 }
 
 #section3 {
-    background: black;
+    background: white;
 }
 
 #section4 {
@@ -77,8 +77,8 @@ h1 {
 
 .rootContainer {
     position: absolute;
-    height: 90vh;
-    width: 98vw;
+    height: 80vh;
+    width: 88vw;
 }
 
 .subContainer {
@@ -102,4 +102,11 @@ h1 {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+
+.rootContainerTwo {
+    position: absolute;
+    height: 40vh;
+    width: 40vw;
 }

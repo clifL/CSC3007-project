@@ -25,13 +25,64 @@
         <h3>Let's take a look at how the situation has evolved.</h3>
     </div>
     <div class="section" id="section2">
-        <h1>This is News Section</h1>
+        <h1>Cases in Singapore</h1>
+        <h3>Singapore has been experiencing a rise in Covid-19 cases with a majority of the case belonging to the 20 - 39 age group.</h3>
+    </div>
+    <div class="section" id="section5">
+        <div class="rootContainer">
+            <div id="whiteOverlay"></div>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <h1>Did you know?</h1>
+        <h3>Case numbers on Tuesdays tend to be higher compared with the rest of the week as they reflect the spike in infections after the weekend, when more people are out in various social settings.</h3>
+    </div>
+    <div class="section" id="section5">
+        <div class="rootContainer">
+            <div id="whiteOverlay"></div>
+            <canvas id="cases-day"></canvas>
+        </div>
     </div>
     <div class="section" id="section3">
         <div class="center">
             <h1 class="whiteText"><strong>Have you ever want to know the <br><span style='color: yellow;'>COVID-19 deaths</span> in Singapore for <span style='color: yellow;'></span>your age
                 group?</span>
             </strong></h1>
+        </div>
+    </div>
+    <div class="section" class="section">
+        <div class="center">
+            <h1><strong>Vaccination remains important in preventing serious complications or susceptibility to death</h1>
+        </div>
+    </div>
+    <!-- <div class="section" id="section4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="rootContainerTwo">
+           
+                        <h3>ICU Rate by Vaccination Status</h3>
+                        <canvas id="icu"></canvas>
+                   
+                  </div>
+                  <div class="rootContainerTwo">
+                    <h3>Death Rate by Vaccination Status</h3>
+                    <canvas id="death"></canvas>
+                  </div>
+              
+            </div>
+        </div>
+    </div> -->
+    <div class="section" id="section3">
+        <div class="rootContainerTwo">
+            <h2>ICU Rate by Vaccination Status</h2>
+            <canvas id="icu"></canvas>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="rootContainerTwo">
+            <h2>Death Rate by Vaccination Status</h2>
+            <canvas id="death"></canvas>
         </div>
     </div>
     <div class="section" class="section">
@@ -66,10 +117,21 @@
             </div>
         </div>
     </div>
-    <div class="section" id="section6">
+    <div class="section" id="section5">
+        <div class="rootContainer">
+            <div id="whiteOverlay"></div>
+            <!-- <canvas id="icu"></canvas> -->
+        </div>
+    </div>
+    <div class="section" id="section7">
         <h1 class="whiteText">Conclusion</h1>
     </div>
 </body>
 <script src="DeathLineChart.js"></script>
+<script src="cases.js"></script>
+<script src="cases-day.js"></script>
+<script src="icu.js"></script>
+<script src="death.js"></script>
+
 
 </html>
