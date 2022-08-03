@@ -110,3 +110,24 @@ html, body {
     height: 40vh;
     width: 40vw;
 }
+
+.paddingTop {
+    padding-top: 20px;
+}
+
+.paddingBottom {
+    padding-bottom: 20px;
+}
+
+.paddingLeft {
+    padding-left: 20px;
+}
+
+.paddingRight {
+    padding-right: 20px;
+}
+
+
+.paddingTopMore {
+    padding-top: 40px;
+}
