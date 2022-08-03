@@ -49,9 +49,9 @@ const data = {
     label: 'My First Dataset',
     data: [y_data_1, y_data_2, y_data_3],
     backgroundColor: [
-      'rgb(255, 99, 132)',
       'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
+      'rgb(255, 205, 86)',
+      'rgb(255, 99, 132)',
     ],
     hoverOffset: 4
   }]
